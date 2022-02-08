@@ -1,0 +1,271 @@
+*{
+    box-sizing: border-box;
+    margin: 0 auto;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif; 
+}
+body{
+    width: 100%;
+    height: 146vh;
+    position: relative;
+    background: url('./background.jpg') no-repeat center center/cover;
+}
+body::after{
+    content: '';
+    position: absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    z-index: 1;
+    background: rgba(0,0,0,0.6);
+}
+.container{
+    position: relative;
+    z-index: 2;
+    width: 30%;
+    height: 90vh;
+    background: rgba(0,0,0,0.8);
+    opacity: 0.99;
+    margin-top: 20px;
+}
+#logo{
+    width: 11.5%;
+    position: relative;
+    z-index: 2;
+    left: 2.8%;
+    margin-top: 20px;
+}
+.signIn{
+     width: 100%;
+     height: fit-content;
+     display: flex; 
+     text-align: left; 
+     flex-direction: column;
+}
+.signIn h1{
+    font-size: 2rem;
+    font-weight: 700;
+    color: rgba(255,255,255,255);
+    text-align: left;
+    margin-top: 60px;
+}
+.signIn input{
+    width: 70%;
+    height: 52px;
+    border-radius: 4px;
+    font-size: 1rem;
+    font-weight: 400;
+    color: rgba(135,133,119,255);
+    background: rgba(51,51,51,255);
+    border-style: none;
+    margin-top: 25px;
+    padding-left: 20px;
+}
+#password{
+    margin-top: 15px;
+}
+.signIn button{
+    width: 70%;
+    height: 52px;
+    border-radius: 5px;
+    border-style: none;
+    background: rgba(229,9,20,255);
+    color: rgba(255,255,255,255);
+    font-size: 1rem;
+    font-weight: 700;
+    margin-top: 40px;
+}
+.signIn button:hover{
+    cursor: pointer;
+}
+.signIn span{
+    font-size: 0.8125;
+    font-weight: 500;
+    color:rgb(179, 179, 179);
+}
+.signIn .checkbox-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 90px;
+}
+.checkbox{
+    display: flex;
+    align-items: center;
+    column-gap: 5px;
+}
+#checkbox{
+    width: 16px;
+    font-size: 0.8125;
+    font-weight: 500;
+    color: rgba(255,255,255,255);
+    margin-top: -8px;
+    margin-left: -8px;
+}
+.checkbox-container span:hover{
+    cursor: pointer;
+    text-decoration: underline;
+}
+.checkbox span:hover{
+    cursor:default;
+    text-decoration: none;
+}
+.already{
+    width: 70%;
+    margin-top: 10px;
+}
+.info img{
+    width: 20px;
+    height: 20px;
+}
+.info span{
+    font-size: 0.8125;
+    font-weight: 500;
+    color:rgb(115, 115, 115);
+}
+.already h2{
+    font-size: 1rem;
+    font-weight: 500;
+    color:rgb(115, 115, 115);
+}
+.info h3{
+    font-size: 0.8125rem;
+    font-weight: 400;
+    color:rgb(140, 140, 140);
+}
+.new{
+    margin-top: 12px;
+}
+.already a{
+    font-size: 1rem;
+    font-weight: 500;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+.new a:hover{
+    text-decoration: underline;
+}
+.captcha a{
+    font-size: 0.8125rem;
+    font-weight: 400;
+    color:rgb(0, 113, 235);
+    text-decoration: none;
+}
+.captcha a:hover{
+    text-decoration: underline;
+}
+.captcha{
+    margin-top: 12px;
+ }
+ .facebook:hover{
+     cursor: pointer;
+ }
+ @media(max-width: 600px){
+    body{
+        background: #000;
+    }
+   #logo{
+      width: 40%; 
+      margin-top: 12px;
+   }
+   .container{
+       width: 100%;
+       height: 85vh;
+       margin-top: 10px;
+   }
+   .signIn input{
+      width: 90%;
+   }
+   .signIn button{
+    width: 90%;
+ }
+ .signIn .checkbox-container{
+     column-gap: 210px;
+ }
+ .already{
+    width: 90%;
+    margin-top: 10px;
+ }
+}
+ .footer{
+     position: relative;
+     z-index: 2;
+    width: 100%;
+    height: 33vh;
+    background: rgba(0,0,0,0.8);
+    margin: 0 auto;
+    color: rgb(117, 117, 117);
+    margin-top: 80px;
+}
+.contain{
+    width: 65%;
+    padding-top: 25px;
+}
+.contain h2{
+    font-size: 1rem;
+    font-weight: 400;
+}
+.lists{
+    margin-top: 30px;
+    display: flex;
+    margin-left: -8%;
+}
+.lists ul{
+    list-style: none;
+}
+.lists ul li{
+    margin-top: 15px;
+}
+.lists ul li:hover{
+    cursor: pointer;
+    text-decoration: underline;
+}
+.contain label select{
+    width: 120px;
+    height: 55px;
+    font-size: 1rem;
+    font-weight: 400;
+    color:rgb(153, 153, 153);
+    background: rgba(0,0,0,0);
+    margin-top: 35px;
+}
+@media(max-width: 600px){
+    body{
+        background: #000;
+    }
+   #logo{
+      width: 40%; 
+      margin-top: 12px;
+   }
+   .container{
+       width: 100%;
+       height: 85vh;
+       margin-top: 10px;
+   }
+   .signIn input{
+      width: 90%;
+   }
+   .signIn button{
+    width: 90%;
+ }
+ .signIn .checkbox-container{
+     column-gap: 210px;
+ }
+ .info{
+    width: 90%;
+    margin-top: 20px;
+ }
+ .footer{
+     margin-top: 15px;
+ }
+ .contain{
+     width: 80%;
+ }
+ .contain h2{
+     text-align: left;
+ }
+ .lists ul li{
+    font-size: 00.8125rem;
+ }
+}
